@@ -1,0 +1,25 @@
+.navbar{
+    background-color: darkolivegreen;
+    padding: 2px;
+}
+.menu{
+    display: flex;
+    justify-content: right;
+    gap: 40px;
+    list-style: none;
+    margin-right: 30px;
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 15px;
+}
+.menu a{
+    text-decoration: none;
+}
+.menu a:visited{
+    color: aliceblue;
+}
+.menu a:hover{
+    color: #f0a500;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}

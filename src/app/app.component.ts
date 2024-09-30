@@ -1,32 +1,19 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-import { UsuariosService } from './usuarios.service';
 import { CommonModule } from '@angular/common';
+import { NavbarComponent } from "./component/navbar/navbar.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HttpClientModule,CommonModule],
+  imports: [RouterOutlet, HttpClientModule, CommonModule, NavbarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  providers: [UsuariosService]
+  providers: []
 })
 export class AppComponent {
-  posts: any[] = []
-  constructor(private usuario:UsuariosService){
-    this.usuario.getPost().subscribe(post => {
-      console.log(post)
-      this.posts = [post]
-    })
-  }
 
   title = 'usuarios de la tienda';
 
-}
-
-export interface usuarios{
-  id:number;
-  nombre:String
-  correo:String
 }
