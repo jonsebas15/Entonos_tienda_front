@@ -1,1 +1,14 @@
-<p>product-list works!</p>
+<p>Lista de productos</p>
+<div class="contenedor-productos">
+    <div *ngFor="let producto of productos" class="productos">
+        <ul>
+            <li>preveedor: {{producto.idProveedor.nombre}}</li>
+            <li>nombre:{{producto.nombre}}</li>
+            <li>precio de compra:{{producto.precioCompra}}</li>
+            <li>precio de venta:{{producto.precioVenta}}</li>
+        </ul>
+        <button (click)="deleteProduct(producto.id)">Eliminar</button>
+        <button>Editar</button>
+    </div>
+</div>
+

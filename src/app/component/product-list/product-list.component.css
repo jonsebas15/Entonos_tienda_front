@@ -1,0 +1,16 @@
+.contenedor-productos{
+    border: 1px solid rgb(99, 99, 99);
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+}
+.productos{
+    border: 1px solid black;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.productos button{
+    margin: 5px;
+}

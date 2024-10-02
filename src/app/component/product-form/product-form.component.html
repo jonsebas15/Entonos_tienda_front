@@ -1,1 +1,22 @@
-<p>product-form works!</p>
+<p>NUEVO PRODUCTO</p>
+<form class ="menu" (submit)="submitProduct()">
+    <div class="main_div">
+        <div class="group">
+            <input type="text" name = "nombre" [(ngModel)] = "producto.nombre" required="required" />
+            <label>Nombre</label>
+        </div>
+        <div class="group">
+            <input type="text" name = "Iva" [(ngModel)] = "producto.ivaCompra" required="required"/>
+            <label>Iva</label>
+        </div>
+        <div class="group">
+            <input type="text" name = "compra" [(ngModel)] = "producto.precioCompra" required="required"/>
+            <label>Precio Compra</label>
+        </div>
+        <div class="group">
+            <input type="text" name = "venta" [(ngModel)] = "producto.precioVenta" required="required"/>
+            <label>Precio venta</label>
+        </div>
+        <button>Crear Producto</button>
+    </div>
+</form>
